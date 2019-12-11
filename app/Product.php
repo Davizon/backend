@@ -16,7 +16,7 @@ class Product extends Model
         return $this->hasMany(ProductOption::class);
     }
     public function product_features(){
-        return $this->hasMany(ProductFeature::class)->with(ProductFeatureValue::class);
+        return $this->hasMany(ProductFeature::class)->with('product_feature_values');
     }
     public function vendor_products(){
         return $this->hasMany(VendorProduct::class);
