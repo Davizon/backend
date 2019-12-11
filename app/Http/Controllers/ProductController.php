@@ -9,6 +9,6 @@ class ProductController extends Controller
 {
     public function index(){
         $products = Product::all();
-        return response()->json($products->load('categories', 'options','vendor_products','states','features'));
+        return response()->json($products->load('categories','vendor_products','states','product_features'));
     }
 }

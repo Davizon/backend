@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableFeatures extends Migration
+class CreateProductFeaturesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateTableFeatures extends Migration
      */
     public function up()
     {
-        Schema::create('features', function (Blueprint $table) {
+        Schema::create('product_features', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('feature_value_id');
             $table->unsignedBigInteger('product_id');
-            $table->string('value');
+            $table->unsignedBigInteger('feature_value_description_id');
             $table->timestamps();
+
         });
     }
 
@@ -28,6 +30,6 @@ class CreateTableFeatures extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('features');
+        Schema::dropIfExists('product_features');
     }
 }
