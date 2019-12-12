@@ -6,11 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductFeatureValue extends Model
 {
-    public function product_feature(){
-        return $this->belongsTo(ProductFeature::class);
-    }
-    public function product_feature_value_descriptions(){
-        return $this->hasMany(ProductFeatureValueDescription::class);
+    public function product_features_value_description(){
+        return $this->belongsToMany(ProductFeatureValueDescription::class,'product_features');
     }
 }
 

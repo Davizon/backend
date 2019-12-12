@@ -17,6 +17,7 @@ class CreateProductFeaturesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('product_feature_value_id');
+            $table->unsignedBigInteger('product_feature_value_description_id');
             $table->timestamps();
 
         });
