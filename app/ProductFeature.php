@@ -10,6 +10,6 @@ class ProductFeature extends Model
         return $this->belongsTo(Product::class);
     }
     public function product_feature_values(){
-        return $this->hasMany(ProductFeatureValue::class)->with('product_feature_value_descriptions');
+        return $this->hasMany(ProductFeatureValue::class);
     }
 }

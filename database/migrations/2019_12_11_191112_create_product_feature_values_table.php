@@ -15,7 +15,6 @@ class CreateProductFeatureValuesTable extends Migration
     {
         Schema::create('product_feature_values', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('product_feature_id');
             $table->string('value');
             $table->timestamps();
         });
