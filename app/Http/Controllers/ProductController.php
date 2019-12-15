@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\ProductFeatureValue;
 use Illuminate\Http\Request;
 use App\Product;
 
@@ -15,7 +16,9 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
+        $value = ProductFeatureValue::all();
         return response()->json($products->load('product_features_value'));
+       //return response()->json($value->load( 'product_features_value_description'));
     }
 
     /**

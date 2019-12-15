@@ -16,11 +16,9 @@ class Product extends Model
         return $this->hasMany(ProductOption::class);
     }
     public function product_features_value(){
-        return $this->belongsToMany(ProductFeatureValue::class,'product_features');
+        return $this->belongsToMany(ProductFeatureValue::class,'product_features')->distinct()->with('product_features_value_description');
     }
-    public function product_features_value_description(){
-        return $this->belongsToMany(ProductFeatureValueDescription::class,'product_features');
-    }
+
     public function vendor_products(){
         return $this->hasMany(VendorProduct::class);
     }

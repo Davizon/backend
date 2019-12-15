@@ -16,6 +16,7 @@ class CreateForeignFeature extends Migration
         Schema::table('product_features', function (Blueprint $table) {
             $table->foreign('product_feature_value_id')->references('id')->on('product_feature_values')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('product_feature_value_description_id')->references('id')->on('product_feature_value_descriptions')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
