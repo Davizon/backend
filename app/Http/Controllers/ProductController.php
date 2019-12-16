@@ -18,6 +18,7 @@ class ProductController extends Controller
         $products = Product::all();
         $value = ProductFeatureValue::all();
         return response()->json($products->load('product_features_value'));
+       //return response()->json($value->load( 'product_features_value_description'));
     }
 
     /**
