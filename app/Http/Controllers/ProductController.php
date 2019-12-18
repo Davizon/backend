@@ -17,8 +17,8 @@ class ProductController extends Controller
     {
         $products = Product::all();
         $value = ProductFeatureValue::all();
-        return response()->json($products->load( 'features_value'));
-       //return response()->json($value->load( 'product_features_value_description'));
+        return response()->json($products);
+//       return response()->json($value->load( 'product_feature_value_description'));
 
     }
 
@@ -51,7 +51,8 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::findOrFail($id);
+        return response()->json($product->load('features_value'));
     }
 
     /**
