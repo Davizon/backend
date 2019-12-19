@@ -21,6 +21,11 @@ class ProductFeatureValueTableSeeder extends Seeder
                 'value' => 'Size',
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
+            ],
+            [
+                'value' => 'Gender',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
             ]
         ]);
     }
