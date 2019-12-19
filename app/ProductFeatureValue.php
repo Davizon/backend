@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductFeatureValue extends Model
 {
-        public function product_feature_value_description(){
-        $id = $_GET;
+        public function value_description(){
         return $this->belongsToMany(ProductFeatureValueDescription::class,'product_features');
 
     }
