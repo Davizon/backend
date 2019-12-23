@@ -17,7 +17,16 @@ class CreateTableVendors extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('state_id');
             $table->string('name');
+            $table->string('last_name');
             $table->string('email');
+            $table->string('company');
+            $table->string('phone');
+            $table->string('mobile');
+            $table->text('address');
+            $table->string('city');
+            $table->string('country');
+            $table->string('province');
+            $table->string('postal_code');
             $table->timestamps();
         });
     }
