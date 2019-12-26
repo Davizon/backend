@@ -17,7 +17,6 @@ class CreateProductCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedSmallInteger('product_id');
             $table->unsignedSmallInteger('product_category_value_id');
-            $table->unsignedSmallInteger('product_category_value_description_id');
             $table->timestamps();
         });
     }

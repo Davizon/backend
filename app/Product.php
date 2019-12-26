@@ -27,10 +27,7 @@ class Product extends Model
         }]);
     }
     public function categories(){
-        return $this->belongsToMany(ProductCategoryValue::class,'product_categories')->distinct()->with(['subcategory' => function ($query){
-            $id = $this->id();
-            $query->where('product_id',$id);
-        }]);
+        return $this->belongsToMany(ProductCategoryValue::class,'product_categories');
     }
 
 }
