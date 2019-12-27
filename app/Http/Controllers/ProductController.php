@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\ProductCategorie;
 use App\ProductFeatureValue;
 use Illuminate\Http\Request;
 use App\Product;
@@ -40,7 +41,29 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Product();
+        $product->product_name = $request->product_name;
+        $product->product_code = $request->product_code;
+        $product->short_description = $request->short_description;
+        $product->full_description = $request->full_description;
+        $product->price = $request->price;
+        $product->special_price = $request->price;
+        $product->meta_keyword = str_replace(' ', ',', $request->product_name);
+        $product->meta_description = str_replace(' ', ',', $request->product_name);
+        $product->page_title = $request->product_name;
+        $product->main_image = $request->main_image;
+        $product->note = $request->note;
+        $product->state_id = $request->state_id;
+        $product->save();
+
+        $category = new ProductCategorie();
+        $category->product_id = $product->id;
+        $category->product_category_value_id = $request->category;
+        $category->save();
+        $category = new ProductCategorie();
+        $category->product_id = $product->id;
+        $category->product_category_value_id = $request->sub_category;
+        $category->save();
     }
 
     /**
@@ -76,7 +99,20 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $product = Product::findOrFail($id);
+        $product->product_name = $request->product_name;
+        $product->product_code = $request->product_code;
+        $product->short_description = $request->short_description;
+        $product->full_description = $request->full_description;
+        $product->price = $request->price;
+        $product->special_price = $request->price;
+        $product->meta_keyword = str_replace(' ', ',', $request->product_name);
+        $product->meta_description = str_replace(' ', ',', $request->product_name);
+        $product->page_title = $request->product_name;
+        $product->main_image = $request->main_image;
+        $product->note = $request->note;
+        $product->state_id = $request->state_id;
+        $product->save();
     }
 
     /**
