@@ -35,7 +35,8 @@ class ProductCategoryTableSeeder extends Seeder
                 'product_category_value_id' => 3,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
-            ],[
+            ],
+            [
                 'product_id' => 1,
                 'product_category_value_id' => 4,
                 'created_at' => date("Y-m-d H:i:s"),
