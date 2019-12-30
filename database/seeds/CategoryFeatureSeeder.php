@@ -13,37 +13,37 @@ class CategoryFeatureSeeder extends Seeder
     {
         DB::table('category_features')->insert([
             [
-                'product_category_value_id' => 4,
+                'product_category_value_id' => 10,
                 'product_feature_value_id' => 1,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
-                'product_category_value_id' => 4,
+                'product_category_value_id' => 10,
                 'product_feature_value_id' => 2,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
-                'product_category_value_id' => 5,
+                'product_category_value_id' => 11,
                 'product_feature_value_id' => 1,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
-                'product_category_value_id' => 6,
+                'product_category_value_id' =>11,
                 'product_feature_value_id' => 2,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
-                'product_category_value_id' => 6,
+                'product_category_value_id' =>11,
                 'product_feature_value_id' => 3,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
-                'product_category_value_id' => 7,
+                'product_category_value_id' => 12,
                 'product_feature_value_id' => 3,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),

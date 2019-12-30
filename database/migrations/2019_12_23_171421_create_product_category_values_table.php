@@ -15,8 +15,9 @@ class CreateProductCategoryValuesTable extends Migration
     {
         Schema::create('product_category_values', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('value');
+            $table->string('label');
             $table->unsignedSmallInteger('parent_id');
+            $table->bigInteger('value');
             $table->timestamps();
         });
     }
