@@ -1,0 +1,175 @@
+[33mcommit ba5eff9d3cce8529c583228e8c96d3a14f00b7a2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Dec 27 16:10:23 2019 -0400
+
+    Template Feature
+
+[33mcommit cdbbb0673854c7ef4bcb7c1472d0ab2081d7ef46[m
+Merge: 4f5c49e 406a2b2
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Dec 27 14:37:26 2019 -0400
+
+    Merge branch 'master' of https://github.com/Davizon/backend
+
+[33mcommit 4f5c49e5b782c6d49393c0131274da60072a9e0b[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Dec 27 14:37:16 2019 -0400
+
+    Seeder Product_Category
+
+[33mcommit 406a2b2d020a58f135d394481c96d10ed5cd7e2c[m
+Author: Davizon <davison1105@gmail.com>
+Date:   Fri Dec 27 14:35:17 2019 -0400
+
+    Metodo de Creacion, Actualizacion Ready!
+
+[33mcommit 6df3fbc30f625d3fc6bd09c9937be2c02701f768[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Thu Dec 26 10:49:24 2019 -0400
+
+    Correction Category Products
+
+[33mcommit 280c6d04fd1e4e924fe456b1e53c930f0598c6b2[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Mon Dec 23 17:07:05 2019 -0400
+
+    Category and Sub Category Full
+
+[33mcommit ef9ae426ae9160e63660677be48ce031cb88675a[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Thu Dec 19 17:34:50 2019 -0400
+
+    Add product_options Full
+
+[33mcommit 2e498d593daae281fbfee436e4e9e3cf69fcaca4[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Thu Dec 19 10:04:44 2019 -0400
+
+    Add Seed Features
+
+[33mcommit fdbef80c7974c4cf4fcf8e0f9f9c29033ca601e9[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Wed Dec 18 10:33:07 2019 -0400
+
+    feature add finished
+
+[33mcommit 02de2ae0093c0b0690c9faca24eec177a201560d[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Tue Dec 17 18:03:28 2019 -0400
+
+    Relations product_feature
+
+[33mcommit 411e876743897f6b65366a5f4c7995a0ea0e8de1[m
+Merge: edd1330 528dd65
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Mon Dec 16 09:33:43 2019 -0400
+
+    Merge branch 'master' of https://github.com/Davizon/backend
+
+[33mcommit edd1330acd8b3e87c442822a72c70cb7c0ae9d00[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Mon Dec 16 09:33:37 2019 -0400
+
+    para descartar
+
+[33mcommit 528dd65f9f913eb3033137c91f118d3ab3417be6[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Sun Dec 15 00:03:43 2019 -0400
+
+    relation Product with feature_value with feature_description
+
+[33mcommit adc45a03f54248caf83bc700009bd2a3d870338f[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Fri Dec 13 15:38:25 2019 -0400
+
+    relation table feature_value whit value_description 0.5
+
+[33mcommit 63e8f05db2db3d4e1babbe3153910243021b7c96[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Thu Dec 12 16:33:28 2019 -0400
+
+    Data Base realation product - product_feature_value
+
+[33mcommit 979468bd3359a4bd428f0b28db8deff505586165[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Thu Dec 12 12:03:21 2019 -0400
+
+    update data base-3
+
+[33mcommit c5c08a934cc98350be1db49376d81d42718784ed[m
+Author: Davizon <davison1105@gmail.com>
+Date:   Thu Dec 12 11:33:51 2019 -0400
+
+    update foreing feature
+
+[33mcommit de9dfe1cf9f6f9c93525924faf83e5ef32f2f227[m
+Author: Davizon <davison1105@gmail.com>
+Date:   Thu Dec 12 11:15:21 2019 -0400
+
+    Creacion de Data Seeders
+
+[33mcommit 68929c43d8b6b17d94d64bf15635e30ce7eddfad[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Wed Dec 11 17:52:02 2019 -0400
+
+    Data base relation 1.2
+
+[33mcommit f545890240fb7d254949a0273ac0e53c169cc3aa[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Wed Dec 11 17:11:37 2019 -0400
+
+    Data base relation 1.1
+
+[33mcommit 1f87cb50078cbe8c7de85ff632a2a0e2e406e1df[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Wed Dec 11 16:27:07 2019 -0400
+
+    Data base relation 1
+
+[33mcommit c8bdfc99a3ea13844dbe8e67a31d73601f7efd01[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Tue Dec 10 18:08:30 2019 -0400
+
+    Relation Data base - 2
+
+[33mcommit df689de28bfc15fa884ff3d96af229b23ec3fc61[m
+Author: Davizon <davison1105@gmail.com>
+Date:   Tue Dec 10 12:18:08 2019 -0400
+
+    Add Cors para consumir la api
+
+[33mcommit 1e598e1ddfe410d9a5311a5aca9f5f9c9ed6dd4d[m
+Author: Davizon <davison1105@gmail.com>
+Date:   Tue Dec 10 11:47:41 2019 -0400
+
+    Inicio de Creacion de la api
+
+[33mcommit b5d1417e227f7dca12226a3b0d516324088dbc63[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Tue Dec 10 11:24:35 2019 -0400
+
+    Relation Data base
+
+[33mcommit 41df440ebc86a764e23b4e927bd574618f617cbf[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Mon Dec 9 13:02:53 2019 -0400
+
+    create data base -1
+
+[33mcommit 482a4e43e64c3d7e0e6cf1c2ce7661c174d1471d[m
+Author: Dariel Abreu <odalisdabreu@gmail.com>
+Date:   Mon Dec 9 11:29:25 2019 -0400
+
+    Primer Commit
+
+[33mcommit 3e249a53eb0c9026172088b82ef07e49d71ff687[m
+Author: Davizon <davison1105@gmail.com>
+Date:   Mon Dec 9 10:25:47 2019 -0400
+
+    Subido de Repo Laravel - React View Edit v2
+
+[33mcommit 40a5fa9720b3d232273cdde4630165161e97f954[m
+Author: Davizon <davison1105@gmail.com>
+Date:   Mon Dec 9 10:25:09 2019 -0400
+
+    first commit
