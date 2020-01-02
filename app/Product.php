@@ -30,4 +30,7 @@ class Product extends Model
         return $this->belongsToMany(ProductCategoryValue::class,'product_categories');
     }
 
+
+    protected $fillable = ['product_code','product_name','short_description','full_description','price','special_price',
+                            'meta_keyword','meta_description','page_title','main_image','note','state_id'];
 }

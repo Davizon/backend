@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\FormImport;
+use App\Imports\ProductsImport;
 use App\ProductCategorie;
 use App\ProductFeatureValue;
 use Illuminate\Http\Request;
 use App\Product;
+use Maatwebsite\Excel\HeadingRowImport;
+use Maatwebsite\Excel\Facades\Excel;
+
 
 class ProductController extends Controller
 {
@@ -124,5 +129,49 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function import(Request $request)
+
+    {
+//        $validData = $request->validate([
+//            'form_product_code' => 'required',
+//            'form_product_name' => 'required',
+//            'form_short_description' => 'required',
+//            'form_description' => 'required',
+//            'form_quantity' => 'required',
+//            'form_price' => 'required',
+//            'form_weight' => 'required',
+//            'form_main_image' => 'required',
+//        ]);
+        Excel::import(new ProductsImport(), $request->file('fileView'));
+        FormImport::query()->delete();
+        return redirect('/importView');
+
+    }
+    public function formImport(Request $request){
+
+        $headings = (new HeadingRowImport)->toCollection($request->file('file'));
+        foreach ( $headings as $heading){}
+        $totalColumn = count($heading[0]);
+        for ($a=0; $totalColumn !== $a; $a++){
+            $value = json_encode($heading[0][$a]);
+            $head_excel = new FormImport();
+            $head_excel->head_excel = $value;
+            $head_excel->save();
+        }
+        return redirect('/form_view')->with('success', 'Product is successfully deleted');
+
+    }
+    public function formView(){
+
+        $headings = FormImport::all();
+//        $users = User::all();
+        return view('import.formView',[
+            'headings' => $headings,
+//            'users' => $users
+        ]);
+    }
+    public function importView(){
+        return view('import.importView');
     }
 }

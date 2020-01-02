@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/import', 'ProductController@import')->name('import');
+Route::post('/form_import', 'ProductController@formImport')->name('form_import');
+Route::get('/form_view', 'ProductController@formView');
+Route::get('/importView', 'ProductController@importView');
