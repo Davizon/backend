@@ -29,5 +29,7 @@ class Product extends Model
     public function categories(){
         return $this->belongsToMany(ProductCategoryValue::class,'product_categories');
     }
-
+    public function vendor(){
+        return $this->belongsToMany(Vendor::class,'vendor_products');
+    }
 }
