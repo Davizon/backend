@@ -32,4 +32,8 @@ class Product extends Model
     public function vendor(){
         return $this->belongsToMany(Vendor::class,'vendor_products');
     }
+
+
+    protected $fillable = ['product_code','product_name','short_description','full_description','price','special_price',
+                            'meta_keyword','meta_description','page_title','main_image','note','state_id'];
 }
